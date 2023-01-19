@@ -104,8 +104,11 @@ h1{
     justify-content: center;
 }
 
+.project-img{
+    width: 100%
+}
+
 .projects-grid{
-    border: 1px solid;
     width: 350px;
 }
 
