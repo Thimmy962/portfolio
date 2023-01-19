@@ -10,13 +10,23 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+
+#navbar > a{
+    text-shadow: 3px 3px #303841;
+    float: left;
+    text-decoration: overline;
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: italic;
 }
 
 #nav-list{
     display: flex;
     flex-direction: row;
+    float: right;
 }
 
 #nav-list li {
@@ -81,4 +91,29 @@ h1{
     width: 100%;
     background-color: #303841;
     padding: 1em;
+}
+
+#projects h2{
+    margin-bottom: 10px;
+}
+
+#project{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.projects-grid{
+    border: 1px solid;
+    width: 350px;
+}
+
+button{
+    width: 150px;
+    background-color: #bb3244;
+    border: 0;
+    border-radius: 10px;
+    margin: 20px;
+    height: 40px;
 }
