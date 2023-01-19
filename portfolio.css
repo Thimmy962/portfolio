@@ -124,3 +124,14 @@ button{
     margin: 20px;
     height: 40px;
 }
+@media (max-width: 650px) {
+    #navbar > ul{
+        display: none;
+    }
+    .fa{
+        display: block;
+        padding: 20px 40px;
+        font-size: x-large;
+        float: right;
+    }
+}
