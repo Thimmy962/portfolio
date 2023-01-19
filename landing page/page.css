@@ -1,0 +1,231 @@
+body{
+    width: 80%;
+    margin: auto;
+    background-color: #eee;
+    color: black; 
+    box-sizing: border-box;
+  }
+
+  #header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .topnav .active {
+    width: 14%;
+    font-style: oblique;
+    text-align: center;
+    background-color: orangered;
+    text-decoration: overline;
+}
+
+.topnav .second-child{
+    padding: 0;
+    margin: 0;
+    width: 78%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    list-style:none;
+    padding: 0 15px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:not(:nth-last-of-type(1)):hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+  
+  form{
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #email{
+    width:20rem;
+    display: block;
+    margin:  auto auto 20px ;
+  }
+  
+  #submit{
+    height: 30px;
+    width: 80px
+  }
+  
+  #submit{
+    background-color: orangered;
+    border: 0;
+    border-radius: 5px
+  }
+  
+  .features{
+    display: flex;
+    width: 100%;
+    padding: 20px 5px;
+    
+  }
+  
+  #features{
+    margin-bottom: 50px;
+  }
+  
+  .icon{
+    width: 15%;
+    text-align: center;
+    color: orangered;
+    padding-top: 10px;
+  }
+  
+  .desc{
+    width: 80%;
+    margin: 0;
+    
+  }
+  .desc h2,
+  .desc p{
+    float: left;
+    margin: 0; 
+  }
+  
+  section:nth-of-type(1){
+    margin-top: 70px
+  }
+  
+  
+  
+  section:not(section:nth-of-type(1)){
+    margin-bottom: 20px; 
+    text-align: center;
+    min-height:350px;
+    text-align: center;
+  
+  }
+  
+  #price{
+      display: flex;
+      column-gap:20px;
+      row-gap: 20px
+  
+    
+  }
+  
+  .price{
+    border: 2px solid black;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    height: 75%;
+    max-width: 300px;
+  }
+  
+  .price, button{
+    border-radius: 5px
+  }
+  
+  .price h2{
+    margin-top:0;
+    height: 15%;
+    background-color: #ddd; 
+  }
+  
+  button{
+    background-color: #ddd;
+    border: 0;
+    width: 100px;
+    height: 25px
+  }
+  
+  #footer{
+    height: 80px;
+    width: 100%;
+    background-color: #ddd;
+    padding: 10px 20px;
+  }
+  
+  #footer ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  iframe{
+    width:50%;
+    /* height: 75% */
+  }
+  
+
+  
+  
+  @media (max-width: 700px){
+   #price{
+     display: flex;
+     flex-direction: column;
+   } 
+   body, iframe, .price{
+     width: 100%;
+     height: 350px
+   }
+   #footer{
+     padding-right: 60px;
+   }
+  .second-child a{
+    display: none;
+  }
+
+  .second-child a:last-child{
+    display: block;
+    color: orangered;
+  }
+
+  .second-child a:last-child:hover{
+    background-color: #ddd;
+  }
+
+
+  .topnav.responsive {
+    position: relative;
+}
+  .topnav.responsive a.icon {
+    position: absolute;
+    background-color: #fff;
+    margin-right: 20px;
+    width: 75px;
+    text-align: center;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  }
+   
+  
+  
+  #container{
+    display: flex;
+    flex-direction: column;
+  }

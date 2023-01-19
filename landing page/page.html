@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='page.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>basicWind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+                var x = document.getElementById("nav-bar");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+    </script>
+</head>
+<body>
+    <main class='main'>
+      <header id="header">
+          <nav id='nav-bar' class="topnav">
+                <a href="" class="active">basicWind</a>
+                <div class="second-child">
+                    <a  class='nav-link' href='#features'>Features</a>
+                    <a  class='nav-link' href='#how-it-works'>How it Works</a>
+                    <a class='nav-link' href='#price'>Pricing</a>
+                    <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+                </div>
+       </nav>
+    </header>
+    <form id='form'  method='post' action='https://www.freecodecamp.com/email-submit'>
+      <input type="email"name='email' id='email' placeholder="Enter your Email Address">
+      <input type="submit" value='Submit' id='submit'>
+    </form>
+    <section id='features'>
+<div id='container'>
+<div class="features">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>
+                Our instrument use the shiniest brass which is sourced locally.
+               This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+
+<div class="features">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
+
+  <div class="features">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </div>
+
+    </section>
+    <section id='how-it-works'>
+      <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
+    <section id='price'>
+      <div class='price'>
+        <h2>Trumpets</h2>
+        <h3>$600-$1000<h3>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <button>SELECT</button>
+      </div>
+      <div class='price'>
+        <h2>Trumpets</h2>
+        <h3>$600-$1000<h3>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <button>SELECT</button>
+      </div>
+      <div class='price'>
+        <h2>Trumpets</h2>
+        <h3>$600-$1000<h3>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <button>SELECT</button>
+      </div>
+    </section>
+    <footer id='footer'>
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Contact</li>
+      </ul>
+      <ul>
+        <li>Copyright 2023</li>
+        <li>basicWind</li>
+      </ul>
+    </footer>
+    </div>
+</body>
+</html>

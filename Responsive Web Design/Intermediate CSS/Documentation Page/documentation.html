@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="documentation.css">
+    <title>Python</title>
+</head>
+<body>
+    <nav id="navbar">
+        <Header>Python Documentation</Header>
+        <ul>
+            <li><div class="li"><a href="#introduction">Introduction</a></div></li>
+            <li><div class="li"><a href="#variable">Variables</a></div></li>
+            <li><div class="li"><a href="#variable_scope">Variable Scope</a></div></li>
+            <li><div class="li"><a href="#hello">Hello World</a></div></li>
+            <li><div class="li"><a href="#functions">Functions</a></div></li>
+            <li><div class="li"><a href="#data">Data Types</a></div></li>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction">
+            <header class="header">Introduction</header>
+            <article>
+                <p>
+                    Python is an easy to learn, powerful programming language. 
+                    It has efficient high-level data structures and a simple but effective approach to object-oriented programming. 
+                    Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+                </p>
+                <p>
+                    The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site, <a href="https://www.python.org/,">https://www.python.org/,</a> and may be freely distributed. 
+                    The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
+                </p>
+                <p>
+                    This tutorial introduces the reader informally to the basic concepts and features of the Python language and system. 
+                    It helps to have a Python interpreter handy for hands-on experience, but all examples are self-contained, so the tutorial can be read off-line as well.
+                </p>
+            </article>
+        </section>
+
+        <section id="variable">
+            <header class="header">
+                Variables
+            </header>
+            <article>
+                <p>A variable is a symbolic name in your application. Variables are also called identifiers. Identifiers always start with letter with no space in between
+                    . In a case where an identifier is more than a word the words are joined with superscript. Some words cant be used as identifiers since the interpreter 
+                    interpretes them diffently or its a synthax in python.
+                </p>
+                <p>A couple of words that can`t be used identifiers are:
+                    <ul>
+                        <li>class</li>
+                        <li>Global</li>
+                        <li>def</li>
+                        <li>print</li>
+                        <li>set</li>
+                        etc
+                    </ul>
+                </p>
+                <code>name = "Timileyin" 
+                    <p>time = 'JSS 2'</p>
+                </code>
+                
+            </article>
+        </section>
+
+        <section id="variable_scope">
+            <header class="header">Variable Scope</header>
+            <p>When you declare a variable outside of any function, it is called a global variable, 
+                because it is available to any other code in the current document. 
+                When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                <p>For example
+                    <code>
+                    names=['Taye', 'Bimbo']
+                        <p>def greet(name):
+                            <br>
+                            name="Thimmy"
+                            <br>
+                            print(name)
+                        </p>
+                        
+                    </code>
+                    The identifiercalled 'name' is a global variable because its not under any function whike identifier 'name' is a local variable.
+                </p>
+            </p>
+        </section>
+
+        <section id="hello">
+            <header class="header">Hello World</header>
+            <article>
+                <p>To get started with python, open the Scratchpad and write your first "Hello world" Python code:</p>
+                <code class="code">
+                    print('Hello World')
+                </code>
+            </article>
+        </section>
+
+        <section id="functions">
+            <header class="header">Function</header>
+            <article>
+                <p>The are a lot of functions that came in handy with python interpreter, some of which are:</p>
+                <ul>
+                    <li>print</li>
+                    <li>input</li>
+                    <li>split</li>
+                    <li>len</li>
+                    <li>sort</li>
+                    etc
+                </ul>
+                <p>There are also custom made functions i.e the function/s a programmer wrote by his or her herself e.g</p>
+                <code>
+                    <p>def add(a, b):
+                        <br>
+                        return a + b
+                    </p>
+                </code>
+                <em>'def' is used to define a function</em>
+                <p>This function is called 'add', takes 2 parameters and returns the sum of these parameters </p>
+            </article>
+        </section>
+
+        <section id="data">
+            <heder class="header">Data Types</heder>
+            <article>
+                <p>The following are examples of data types:</p>
+                <ul>
+                    <li>Boolean: True and False</li>
+                    <li>Null: A special keyword denoting a null value. Because JavaScript is case</li>
+                    <li>undefined: A top-level property whose value is undefined</li>
+                    <li>int: whole numbers(both negative and positive)</li>
+                    <li>float: decimals(both negative and positive)</li>
+                    <li>strings: texts e.g name</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

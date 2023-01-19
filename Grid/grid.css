@@ -1,0 +1,278 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baskervville', serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: linen;
+}
+/* Heading */
+.heading{
+  display: grid;
+  grid-template: 1fr 1fi 1fr/ 1fr 1fi 1fr ;
+  margin-bottom: 20px;
+}
+
+.hero-img{
+  width: 100%;
+  color: orangered;
+}
+
+.flex{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.author{
+  margin: 10px 20px;
+  font-size: 20px;
+  display: inline-block;
+  width: 45%;
+}
+
+.social-icons{
+  width: 40%;
+  padding: 20px 40px 0;
+  text-align: center;
+  display:flex;
+  justify-content: space-between;
+  height: 46px;
+  font-size: 30px;
+
+}
+
+.hero-title{
+  font-size: 6rem;
+  color: orangered;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+header > .hero-subtitle{
+  color: orangered;
+  font-size: x-large;
+  font-style: italic;
+  text-align: center;
+  padding: 0 2rem;
+}
+@media (max-width: 450px) {
+  .heading{
+    align-items: center;
+  }
+  .hero-img{
+    width: 100%;
+  }
+  .hero-title{
+    width: 90%;
+    margin-left: 10px;
+    padding: 0 auto;
+    font-size: 4.2rem;
+    color: orangered;
+  }
+  
+  header > .hero-subtitle{
+    color: orangered;
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+}
+
+/* main */
+
+@media (min-width: 650px) {
+.text{
+  font-size: 20px;
+}
+
+main > section:nth-child(1){
+  margin: 5px 25px;
+  column-gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 1.2;
+}
+
+main > section:nth-child(1) > p:nth-of-type(1)::first-letter{
+  color: orangered;
+  font-size: 8rem;
+  float: left;
+}
+
+main > section:nth-child(1) > p:nth-of-type(1)::first-line{
+  text-transform: uppercase;
+}
+
+main > section:nth-child(1) > *:not(:nth-child(5)){
+  line-height: 1.5;
+  letter-spacing: 1;
+  font-size: small;
+  margin-top: 10px;
+}
+
+.first-blockquote > p{
+  padding: 20px 0;
+  text-align: center;
+  min-height: 130px;
+  font-size: 33px;
+  color: orangered;
+}
+
+.image-quote > p{
+  padding: 20px 0;
+  text-align: center;
+  font-size: 33px;
+  color: orangered;
+}
+
+blockquote > p::before{
+  content: open-quote;
+}
+
+blockquote > p::after{
+  content: close-quote;
+}
+
+main > section:nth-child(1) > p:last-child{
+  grid-column: 1 / -1;
+}
+
+/* aside{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+} */
+
+aside > img{
+  /* max-width: 300px; */
+  max-height: 350px;
+  margin: 0 auto;
+}
+
+li{
+  list-style: none;
+}
+
+.text-with-images{
+  font-size: 15px;
+  padding: 0 20px;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.brief-history{
+  padding: 15px 0;
+}
+
+.list-subtitle{
+  color: orangered;
+}
+
+.brief-history > h3, .brief-history > p{
+  text-align: center;
+  color: orangered;
+}
+
+.image-1{
+  width: 100%;
+}
+
+.image-2, .image-quote{
+  width: 49.7%;
+  display: inline-block;
+}
+
+}
+
+
+/* Small screen */
+main{
+  font-size: 20px;
+  margin: 20px;
+}
+
+section > p, blockquote{
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+li{
+  float: left;
+  list-style: none;
+  margin: 10px;
+}
+
+.first-blockquote > p{
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 33px;
+  color: orangered;
+}
+
+.image-quote > p{
+  text-align: center;
+  font-size: 33px;
+  color: orangered;
+}
+
+blockquote > p::before{
+  content: open-quote;
+}
+
+blockquote > p::after{
+  content: close-quote;
+}
+
+main img{
+  width:100%;
+  margin:15px 0 20px;
+}
+
+ .text > p:nth-of-type(1)::first-letter{
+  color: orangered;
+  font-size: 8rem;
+  float: left;
+}
+
+.brief-history > h3, .brief-history > p{
+  text-align: center;
+  color: orangered;
+}
+
+.brief-history > p{
+  font-style: italic;
+}
+
+.brief-history > h3{
+  margin: 25px 0 0;
+}
+
+

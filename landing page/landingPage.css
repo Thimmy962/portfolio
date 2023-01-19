@@ -1,0 +1,200 @@
+body{
+  width: 80%;
+  margin: auto;
+  background-color: #eee;
+  color: black; 
+}
+
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 10px 20px;
+  background-color: #eee;
+  position: sticky;
+  top: 0;
+  
+}
+
+img{
+  border-radius: 50%;
+}
+
+#nav-links{
+  display: flex;
+  padding-top: 20px;
+}
+
+#nav-links > a:not(:first-child){
+  padding-left: 30px;
+}
+
+
+li, a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  padding: 0 5px
+}
+
+form{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#email{
+  width:20rem;
+  display: block;
+  margin:  auto auto 20px ;
+}
+
+#submit{
+  height: 30px;
+  width: 80px
+}
+
+#submit{
+  background-color: orangered;
+  border: 0;
+  border-radius: 5px
+}
+
+.features{
+  display: flex;
+  width: 100%;
+  padding: 20px 5px;
+  
+}
+
+#features{
+  margin-bottom: 50px;
+}
+
+.icon{
+  width: 15%;
+  text-align: center;
+  color: orangered;
+  padding-top: 10px;
+}
+
+.desc{
+  width: 80%;
+  margin: 0;
+  
+}
+.desc h2,
+.desc p{
+  float: left;
+  margin: 0; 
+}
+
+section:nth-of-type(1){
+  margin-top: 70px
+}
+
+
+
+section:not(section:nth-of-type(1)){
+  margin-bottom: 20px; 
+  text-align: center;
+  min-height:350px;
+  text-align: center;
+
+}
+
+#price{
+    display: flex;
+    column-gap:20px;
+    row-gap: 20px
+
+  
+}
+
+.price{
+  border: 2px solid black;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  height: 75%;
+  max-width: 300px;
+}
+
+.price, button{
+  border-radius: 5px
+}
+
+.price h2{
+  margin-top:0;
+  height: 15%;
+  background-color: #ddd; 
+}
+
+button{
+  background-color: #ddd;
+  border: 0;
+  width: 100px;
+  height: 25px
+}
+
+#footer{
+  height: 80px;
+  width: 100%;
+  background-color: #ddd;
+  padding: 10px 20px;
+}
+
+#footer ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+iframe{
+  width:70%;
+  height: 75%
+}
+
+#header-img{
+  background-color: #ddd;
+}
+
+.hamburger{
+  display: none;
+}
+
+
+@media (max-width: 700px){
+ #price{
+   display: flex;
+   flex-direction: column;
+ } 
+ body, iframe, .price{
+   width: 100%;
+ }
+ #footer{
+   padding-right: 60px;
+ }
+
+ .nav-link:not(:nth-of-type(1)){
+   margin-top: 10px;
+ }
+ nav{
+   margin-top: 0;
+ }
+
+ .hamburger{
+  display: block;
+}
+
+#nav-links{
+  display: none
+}
+
+}
+ 
+
+
+#container{
+  display: flex;
+  flex-direction: column;
+}

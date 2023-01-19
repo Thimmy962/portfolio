@@ -1,0 +1,76 @@
+body{
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 16px;
+    background-color: white;
+    color: #f5f6f7;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(27, 27, 50, 0.8)
+
+}
+
+header{
+    text-align: center;
+}
+
+#description{
+    font-style: italic;
+}
+
+label{
+    width: 100%;
+    display: block;
+}
+fieldset{border: unset;}
+
+form{
+    border-radius: 6px;
+    width: 50vw;
+    margin: auto auto;
+    background-color: rgba(27, 27, 50, 0.8);
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.current-role{margin-bottom: 0;}
+
+input, select, textarea{
+    margin: 7px auto 15px;
+    width: 100%;
+    padding: 3px 0;
+    border: 0;
+    border-radius: 10px;
+    
+}
+
+.recommendation{margin: 0 auto 2px;}
+
+.set{
+    width: unset;
+    margin: 8px;
+}
+
+label[for="feature"]{
+    margin-top: 20px;
+}
+.p, .p1{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+} .p{margin-right: 5px;}
+
+input[type="submit"]{
+    display: block;
+    padding: 0.75rem;
+    background-color: #37af65;
+    width: 95%;
+    max-width: 41rem;
+    margin: auto auto;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
