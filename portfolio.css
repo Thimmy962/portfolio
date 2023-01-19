@@ -29,6 +29,10 @@ body{
     float: right;
 }
 
+.fa{
+    display: none;
+}
+
 #nav-list li {
     list-style: none;
 }
@@ -119,4 +123,16 @@ button{
     border-radius: 10px;
     margin: 20px;
     height: 40px;
+}
+
+@media (max-width: 650px) {
+    #navbar > ul{
+        display: none;
+    }
+    .fa{
+        display: block;
+        padding: 20px 40px;
+        font-size: x-large;
+        float: right;
+    }
 }
