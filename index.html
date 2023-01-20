@@ -7,17 +7,37 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="portfolio.css">
+    <script>
+        function myFunction() {
+                var x = document.getElementById("nav-list");
+                var y = document.querySelector('i');
+                if (x.className === "topnav") {
+                    x.classList.add('responsive')
+                    y.style.backgroundColor = 'white';
+                    y.style.color='#bb3244'
+
+                } else {
+                    x.classList.remove('responsive')
+                    y.style.backgroundColor = '#bb3244';
+                    y.style.color='#fff'
+
+                }
+            }
+
+    </script>
 </head>
 <body>
-    <nav id="navbar">
-        <a href="">Thimmy</a>
-        <ul id="nav-list">
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contacts">Contact</a></li>
-        </ul>
-        <i class="fa fa-bars"></i>
-    </nav>
+    <header>
+        <nav id="navbar">
+            <a id='logo' href="">Thimmy</a>
+            <ul id="nav-list" class="topnav">
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="myFunction()"></i>
+        </nav>
+    </header>
     <section id="welcome-section" class="welcome-section">
         <h1>Hey, I am Thimmy</h1>
         <p>a web developer</p>
@@ -55,6 +75,24 @@
         </a>
     </section>
     <section id="contacts" class="contacts">
+        <h1>Youcan reach me through the following media</h1>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/freecodecampls/">
+              <i class="fab fa-whatsapp-w"></i>
+            </a>
+            <a href="https://twitter.com/freecodecamp/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/freecodecamp">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/school/free-code-camp/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com/freecodecamp">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
     </section>
 </body>
 </html>

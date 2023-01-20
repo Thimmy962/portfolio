@@ -1,7 +1,7 @@
 body{
     font-family: 'poppins', sans-serif;
     margin: 0;
-    padding: 0;
+    margin: 0 0.1rem;
 }
 
 #navbar{
@@ -10,8 +10,6 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    /* display: flex;
-    justify-content: flex-end; */
 }
 
 #navbar > a{
@@ -22,6 +20,7 @@ body{
     font-size: 2rem;
     font-style: italic;
 }
+
 
 #nav-list{
     display: flex;
@@ -57,6 +56,11 @@ padding: 1rem 2rem;
     justify-content: center;
     background-color: #000;
     background-image: linear-gradient(52deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1, #welcome-section p{
+    text-align: center;
+    margin-bottom: 0;
 }
 
 h1{
@@ -128,10 +132,42 @@ button{
     #navbar > ul{
         display: none;
     }
+
     .fa{
         display: block;
-        padding: 20px 40px;
-        font-size: x-large;
+        padding: 20px 40px 24px;
+        font-size: xx-large;
         float: right;
+        color: white;
+        height: 100%;
+    }
+
+    #logo{
+        position: relative;
+    }
+
+    #navbar > .responsive{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: -70px;
+        background-color: #455671;
+        width: 105vw;
+    }
+
+    #navbar > .responsive > li{
+        font-size: 20px;
+        width: 105vw;
+        border: 1px solid;
+        padding-bottom: 10px;
+    }
+    #navbar > .responsive > li > a{
+        padding: 0 50px;
+        font-size: 15px;
+    }
+
+    .responsive > li > a:hover, .responsive > li > a:active{
+        color: #000;
     }
 }
