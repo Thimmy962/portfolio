@@ -18,7 +18,7 @@ body{
   }
 
   .topnav .active {
-    width: 14%;
+    float: left;
     font-style: oblique;
     text-align: center;
     background-color: orangered;
@@ -28,7 +28,7 @@ body{
 .topnav .second-child{
     padding: 0;
     margin: 0;
-    width: 78%;
+    float: right;
     display: flex;
     justify-content: flex-end;
 }
@@ -221,11 +221,7 @@ li{
     display: block;
     text-align: left;
   }
+
+ 
   }
    
-  
-  
-  #container{
-    display: flex;
-    flex-direction: column;
-  }
