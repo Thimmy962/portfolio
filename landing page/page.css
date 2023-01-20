@@ -167,7 +167,7 @@ li{
   
   #footer ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   
   iframe{
@@ -188,8 +188,17 @@ li{
      height: 350px
    }
    #footer{
-     width: 100%;
+     width: 95%;
+     margin: auto;
    }
+
+   /* #footer ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+   } */
+
   .second-child a{
     display: none;
   }
