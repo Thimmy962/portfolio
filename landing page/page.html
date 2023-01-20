@@ -11,11 +11,14 @@
     <script>
         function myFunction() {
                 var x = document.getElementById("nav-bar");
+                var y = document.querySelector('.icon')
                 if (x.className === "topnav") {
                     x.className += " responsive";
+                    y.style.backgroundColor = '#fff'
 
                 } else {
                     x.className = "topnav";
+                    y.style.backgroundColor = '#333'
                 }
             }
 
