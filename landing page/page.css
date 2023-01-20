@@ -188,7 +188,7 @@ li{
      height: 350px
    }
    #footer{
-     padding-right: 60px;
+     width: 100%;
    }
   .second-child a{
     display: none;
@@ -197,6 +197,7 @@ li{
   .second-child a:last-child{
     display: block;
     color: orangered;
+    width: 40px;
   }
 
   .second-child a:last-child:hover{
@@ -210,8 +211,8 @@ li{
   .topnav.responsive a.icon {
     position: absolute;
     background-color: #fff;
-    margin-right: 20px;
-    width: 75px;
+    /* margin-right: 20px; */
+    width: 40px;
     text-align: center;
     right: 0;
     top: 0;
