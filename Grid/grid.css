@@ -274,5 +274,8 @@ main img{
 .brief-history > h3{
   margin: 25px 0 0;
 }
-
-
+@media (max-width: 500px){
+  .social-icons > a > i{
+    font-size: 15px;
+  }
+}
