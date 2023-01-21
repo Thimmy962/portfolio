@@ -164,14 +164,7 @@ main > section:nth-child(1) > p:last-child{
   grid-column: 1 / -1;
 }
 
-/* aside{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 5px;
-} */
-
 aside > img{
-  /* max-width: 300px; */
   max-height: 350px;
   margin: 0 auto;
 }
@@ -208,6 +201,10 @@ li{
 .image-2, .image-quote{
   width: 49.7%;
   display: inline-block;
+}
+
+.list-subtitle{
+  color: orangered;
 }
 
 }
@@ -277,5 +274,9 @@ main img{
 @media (max-width: 500px){
   .social-icons > a > i{
     font-size: 15px;
+  }
+  
+  .list-subtitle{
+    color: orangered;
   }
 }
